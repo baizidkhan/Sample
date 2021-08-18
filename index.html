@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/9f04172127.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="home" id="home">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-items">
+                    <div class="logo"><strong>Ab</strong>ove</div>
+                    <div class="link">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#home">Work</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h1><span class="bk"> &#10077;</span> Web Design & Designer<span class="bk">&#10078;</span></h1>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="container about_container">
+            <div class="header heading-1">About</div>
+            <div class="box-wrapper">
+                <div class="img-box">
+                    <img src="./img/picture.jpeg" alt="">
+                </div>
+                <div class="text-box">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque hic ipsam doloribus dolorem incidunt corrupti recusandae voluptas mollitia officia culpa, minus illum sit. Maxime fugiat sit ad fugit cum, sed nostrum, unde quaerat et quia numquam officia aut! Harum, molestias.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia reprehenderit corporis maiores, neque provident sequi ea repellat eum. Cum mollitia numquam ex eius dicta molestiae assumenda molestias iste voluptate fuga.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service" id="service">
+        <div class="container service_container">
+            <div class="header heading-2">Service</div>
+            <div class="list">
+
+                <div class="box">
+                    <div class="icon"><i class="fas fa-camera-retro"></i></div>
+                    <div class="title">Web Design</div>
+                    <div class="items">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                    <div class="btn"><a href="#about">Lern More</a></div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fas fa-print"></i></div>
+                    <div class="title">Print Design</div>
+                    <div class="items">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                    <div class="btn"><a href="#about">Lern More</a></div>
+                </div>
+
+                <div class="box">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <div class="title">Web Development</div>
+                    <div class="items">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                    <div class="btn"><a href="#about">Lern More</a></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container contact_container">
+            <div class="header heading-3">Contact</div>
+
+            <div class="form">
+                <form>
+                    <label><input type="text" placeholder="Your Name"></label>
+                    <label><input type="email" placeholder="Your E-mail"></label>
+                    <label><input type="number" placeholder="Your Number"></label>
+                    <div class="submit"><input type="submit" value="Submit"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        All Rights Reserved &copy; riajulpislam@gmail.com
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</body>
+</html>
